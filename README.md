@@ -42,7 +42,7 @@ The system combines predictive analytics, explainable AI, intervention tracking,
 
 - Frontend: React 19, TypeScript, Tailwind CSS v4, Lucide Icons, Motion
 - Backend: Node.js, Express, tsx
-- AI/LLM: IBM watsonx AI and Google Gemini via `@google/genai`
+- AI/LLM: Google Gemini via `@google/genai`
 - Bundler: Vite
 
 ---
@@ -52,7 +52,7 @@ The system combines predictive analytics, explainable AI, intervention tracking,
 ### 1. Prerequisites
 - Node.js 22.12 or newer
 - npm or bun
-- IBM watsonx AI API for mentor chat functionality
+- Gemini API key from Google AI Studio for mentor chat functionality
 
 ### 2. Install Dependencies
 
@@ -70,14 +70,14 @@ Create a `.env` file in the project root by copying `.env.example`:
 cp .env.example .env
 ```
 
-Add your IBM watsonx AI API:
+Add your Google Gemini API key:
 
 ```env
 GEMINI_API_KEY=your_actual_gemini_api_key_here
 PORT=3000
 ```
 
-> **Note:** If no IBM watsonx AI API key is provided, the core application features such as dropout prediction, student records, charts, and self-registration will still work. The AI Mentor chat feature requires a valid IBM watsonx AI API key and configuration.
+> **Note:** Without a Gemini API key, core features such as dropout prediction, student records, charts, and self-registration will still work. The AI Mentor chat feature requires a valid Gemini API key.
 
 ### 4. Run the Development Server
 
