@@ -50,7 +50,7 @@ The system combines predictive analytics, explainable AI, intervention tracking,
 ## Getting Started
 
 ### 1. Prerequisites
-- Node.js 18+ or 20+
+- Node.js 22.12 or newer
 - npm or bun
 - IBM watsonx AI API for mentor chat functionality
 
@@ -96,6 +96,13 @@ npm run build
 npm start
 ```
 
+### 6. Deploy to Vercel
+
+1. Import this GitHub repository in Vercel.
+2. Keep the build command as `npm run build` and the output directory as `dist` (these are also configured in `vercel.json`).
+3. Add `GEMINI_API_KEY` in the Vercel project environment variables to enable AI Mentor responses.
+4. Deploy the project. Vercel serves the Vite frontend as static assets and routes `/api/*` requests to the Express serverless function.
+
 ---
 
 ## Project Structure
@@ -107,6 +114,8 @@ bharat-cares-app/
 ├── .env.example
 ├── .gitignore
 ├── README.md
+├── api/
+│   └── [...path].ts
 ├── index.html
 ├── metadata.json
 ├── package-lock.json
@@ -114,6 +123,7 @@ bharat-cares-app/
 ├── server.ts
 ├── tsconfig.json
 ├── vite.config.ts
+├── vercel.json
 ├── src/
 │   ├── App.tsx
 │   ├── index.css
