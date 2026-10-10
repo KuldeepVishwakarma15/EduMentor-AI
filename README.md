@@ -77,7 +77,7 @@ GEMINI_API_KEY=your_actual_gemini_api_key_here
 PORT=3000
 ```
 
-> Note: If no IBM watsonx AI API key is provided, the core application features such as dropout prediction, student records, charts, and self-registration will still work. The AI Mentor chat feature requires a valid IBM watsonx AI API key and configuration.
+> **Note:** If no IBM watsonx AI API key is provided, the core application features such as dropout prediction, student records, charts, and self-registration will still work. The AI Mentor chat feature requires a valid IBM watsonx AI API key and configuration.
 
 ### 4. Run the Development Server
 
